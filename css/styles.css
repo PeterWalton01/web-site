@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 16px;
+}
+body {
+  font-family: Verdana, Arial, sans-serif;
+  background-color: #00005d;
+}
+#wrapper {
+  background-color: #b3c7e6;
+  color: #000066;
+  width: 100%;
+  margin: 0;
+  min-width: 28.125rem;
+}
+header {
+  background-color: #869dc7;
+  background-image: url(../img/lighthouselogo.jpg);
+  background-repeat: no-repeat;
+  color: #00005d;
+  padding: 0.625rem;
+  height: 8rem;
+}
+header h1 {
+  padding-left: 12.5rem;
+  height: 4rem;
+}
+
+header span {
+  font-style: italic;
+  font-weight: bold;
+  color: #00005d;
+  padding-right: 0.9375rem;
+  text-align: right;
+  display: block;
+  height: 1.5rem;
+}
+nav {
+  float: left;
+  width: 10.625rem;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  border-bottom: 1px solid silver;
+}
+nav a {
+  text-decoration: none;
+  display: block;
+  padding: 1rem;
+  border: 1px solid lightgray;
+  color: #182e67;
+}
+nav a:link {
+  color: #182e67;
+}
+/* nav a:visited {
+  color: hsla(120, 100%, 26%, 0.2);
+} */
+nav a:hover,
+a:focus {
+  color: #869dc7;
+  background-color: silver;
+}
+main {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 0.625rem 1.25rem;
+  overflow: auto;
+}
+
+h2 {
+  color: #3f3e75;
+  font-family: arial, sans-serif;
+  margin: 0.3125rem;
+  padding: 0.25rem 0;
+  text-shadow: 1px 1px 1px grey;
+}
+
+.main-text {
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.project-list {
+  font-size: 1.1rem;
+  list-style-type: none;
+  margin-left: 1rem;
+}
+
+figure {
+  float: right;
+  margin: 1rem;
+  padding: 0.3125rem;
+  background-color: #fff;
+  border: 0.3125rem solid #ccc;
+  box-shadow: 0.3125rem 0.3125rem 0.3125rem #828282;
+  transform: rotate(+3deg);
+}
+figcaption {
+  text-align: center;
+  font-size: 0.8em;
+  font-style: italic;
+}
+footer {
+  font-size: 70%;
+  text-align: center;
+  padding: 0.625rem;
+  background-color: #869dc7;
+  clear: both;
+}
+#offer a {
+  text-decoration: none;
+  color: #ff0000;
+}
+#offer {
+  background-color: #eaeaea;
+  width: 10em;
+  margin: auto;
+  text-align: center;
+  transform: scale(2);
+}
+header,
+main,
+nav,
+footer,
+figure,
+figcaption {
+  display: block;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-around;
+}
+.skills img {
+  max-width: 75%;
+  height: auto;
+}
+
+.short-desc {
+  margin-bottom: 0.4rem;
+}
+
+@media only screen and (max-width: 800px) {
+  header {
+    background-image: url(../img/lighthousemed.jpg);
+    height: 6rem;
+  }
+  main {
+    margin-left: 0;
+  }
+  nav {
+    float: none;
+    width: auto;
+  }
+  nav li {
+    display: inline-block;
+    padding: 0.5em;
+  }
+  nav ul {
+    text-align: center;
+  }
+  nav a {
+    border-style: none;
+  }
+  header h1 {
+    height: 2.8rem;
+    font-size: 1.3rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  p {
+    font-size: 90%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  nav,
+  nav ul,
+  nav li {
+    padding: 0;
+  }
+  nav li {
+    display: block;
+  }
+  nav a {
+    display: block;
+    padding: 0.5em 0;
+    /* border-bottom: 0.625rem ridge #00005d; */
+    border-bottom: 2px solid #333;
+  }
+  header {
+    border-bottom: 2px solid #333;
+  }
+
+  header h1 {
+    height: 2.8rem;
+    font-size: 1.2rem;
+    padding-left: 7rem;
+  }
+  .main-text {
+    font-size: 1.1rem;
+  }
+  figure {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #wrapper {
+    min-width: 0;
+  }
+  header {
+    background-image: url(../img/lighthousemini.jpg);
+  }
+  header h1 {
+    padding-left: 0;
+  }
+  h1,
+  h2 {
+    font-size: 100%;
+  }
+  span {
+    font-size: 80%;
+  }
+  figure {
+    display: none;
+  }
+  h1 {
+    margin-left: 100px;
+  }
+  header h1 {
+    height: 2.9rem;
+    font-size: 1rem;
+  }
+}
