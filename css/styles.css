@@ -152,6 +152,10 @@ figcaption {
   margin-bottom: 0.4rem;
 }
 
+.mobile {
+  display: none;
+}
+
 @media only screen and (max-width: 800px) {
   header {
     background-image: url(../img/lighthousemed.jpg);
@@ -243,5 +247,13 @@ figcaption {
   header h1 {
     height: 2.9rem;
     font-size: 1rem;
+  }
+
+  .larger {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
   }
 }
