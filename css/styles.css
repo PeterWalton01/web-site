@@ -92,6 +92,11 @@ h2 {
   color: #333;
 }
 
+.project-or-list {
+  font-size: 1.1rem;
+  margin-left: 1.8rem;
+}
+
 .project-list {
   font-size: 1.1rem;
   list-style-type: none;
